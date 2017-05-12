@@ -1,4 +1,6 @@
+console.log(3)
 function JobsService() {
+    console.log(14)
     var url = 'http://localhost:9004/jobs'
 
     this.createJob = function(job){
@@ -20,4 +22,5 @@ function JobsService() {
       );
     });
 	}
+    console.log(15)
 }

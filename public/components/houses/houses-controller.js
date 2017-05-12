@@ -1,6 +1,8 @@
+console.log(5)
 function HousesController() {
+    console.log(18)
     var houseService = new HousesService()
-
+    console.log(21)
     this.createHouse = function(e) {
        // debugger
         e.preventDefault()
@@ -43,4 +45,5 @@ function HousesController() {
         }
         return elem.innerHTML = template
     }
+    console.log(22)
 }

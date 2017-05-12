@@ -1,3 +1,4 @@
+console.log(7)
 var app = {
   controllers: {
     carController: new CarsController(),
@@ -5,3 +6,4 @@ var app = {
     houseController: new HousesController()
   }
 }
+console.log(23)

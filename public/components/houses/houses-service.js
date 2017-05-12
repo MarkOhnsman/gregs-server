@@ -1,4 +1,6 @@
+console.log(2)
 function HousesService() {
+    console.log(19)
     var url = 'http://localhost:9004/houses'
 
     this.createHouse = function(house){
@@ -20,4 +22,5 @@ function HousesService() {
       );
     });
 	}
+    console.log(20)
 }

@@ -1,6 +1,10 @@
+console.log(4)
 function CarsController() {
+    console.log(8)
     var carService = new CarsService()
+    console.log(11)
 
+    //GETS FORM INFO
     this.createCar = function(e) {
         e.preventDefault()
 
@@ -20,16 +24,24 @@ function CarsController() {
         carService.createCar(car)
     }
 
+    //GETS THE CARS FROM THE SERVICE
     this.getCars = function() {
+        console.log(24)
         carService.getCars() 
             .then(function(data) {
+                console.log(28)
                 drawCars(data)
+            }).catch(function(){
+                console.log(28)
+                console.log('WHOOPS YOU BWROKE IT')
             })
     }
 
+
     function drawCars(data) {
-      //  debugger
+        console.log(29)
         var elem = document.getElementById("cars-list")
+        console.log(31)
         var template = "";
         for(var i = 0; i < data.length; i++) {
             var c = data[i];
@@ -43,4 +55,5 @@ function CarsController() {
         }
         return elem.innerHTML = template
     }
+    console.log(12)
 }

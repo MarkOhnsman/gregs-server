@@ -1,6 +1,8 @@
+console.log(6)
 function JobsController() {
+    console.log(13)
     var jobService = new JobsService()
-
+    console.log(16)
     this.createJob = function(e) {
         e.preventDefault()
 
@@ -39,4 +41,5 @@ function JobsController() {
         }
         return elem.innerHTML = template
     }
+    console.log(17)
 }
